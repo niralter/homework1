@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/helmetsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_helmet0"
+            android:layout_width="@dimen/helmet_size"
+            android:layout_height="@dimen/helmet_size"
+            app:srcCompat="@drawable/img_helmet" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_helmet1"
+            android:layout_width="@dimen/helmet_size"
+            android:layout_height="@dimen/helmet_size"
+            android:layout_marginHorizontal="8dp"
+            app:srcCompat="@drawable/img_helmet" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_helmet2"
+            android:layout_width="@dimen/helmet_size"
+            android:layout_height="@dimen/helmet_size"
+            app:srcCompat="@drawable/img_helmet" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_LAY_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/helmetsLayout"
+        android:layout_above="@id/main_BTN_left"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:paddingHorizontal="@dimen/default_margin"
+        android:paddingBottom="8dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:weightSum="3" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_00" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_01" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_02" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:weightSum="3" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_11" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_12" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:weightSum="3" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_20" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_21" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_22" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:weightSum="3" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_30" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_31" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_32" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:weightSum="3" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_40" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_41" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/main_IMG_puddle_42" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:srcCompat="@drawable/img_puddle" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_ROW_player"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_bike0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/img_bike" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_bike1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:srcCompat="@drawable/img_bike" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_bike2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/img_bike" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/main_BTN_left"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/img_btn_left" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/main_BTN_right"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@null"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/img_btn_right" />
+
+</RelativeLayout>
