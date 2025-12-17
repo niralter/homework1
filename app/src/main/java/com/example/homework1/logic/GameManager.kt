@@ -24,7 +24,7 @@ class GameManager(private val lifeCount: Int = Constants.Game.LIFE_COUNT) {
     fun getItemAt(row: Int, col: Int): Int = grid[row][col]
 
     fun updateGameStep(): Boolean {
-        val hit = checkCollision() // בדיקת פגיעה לפני הזזה
+        val hit = checkCollision()
 
         for (i in rows - 1 downTo 1) {
             for (j in 0 until cols) {

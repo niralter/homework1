@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        SignalManager.init(this) // אתחול הסינגלטון
+        SignalManager.init(this)
         gameManager = GameManager()
 
         findViews()
@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity() {
 
         runOnUiThread {
             if (isHit) {
-                // רטט ו-Toast בכל פגיעה לפי הנחיות המטלה
                 SignalManager.getInstance().toast("Crash!")
                 SignalManager.getInstance().vibrate(500)
             }
@@ -114,7 +113,7 @@ class MainActivity : AppCompatActivity() {
     private fun checkGameOver() {
         if (gameManager.isGameOver) {
             stopTimer()
-            main_BTN_left.isEnabled = false // נטרול כפתורים בסיום המשחק
+            main_BTN_left.isEnabled = false
             main_BTN_right.isEnabled = false
             SignalManager.getInstance().toast("Game Over!")
         }
